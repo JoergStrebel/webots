@@ -40,7 +40,7 @@ ifeq ($(OSTYPE),linux)
 C_FLAGS         = -c -Wall -fPIC -Wno-unused-but-set-variable
 LD_FLAGS        = -shared
 LIBRARY         = $(PYTHON_LIB_FOLDER)/_$(MODULE_NAME).so
-PYTHON_INCLUDES = -I"/usr/include/python$(PYTHON_VERSION)"
+PYTHON_INCLUDES = -I"/usr/include/python$(PYTHON_VERSION)m"
 LIB            += -L"$(WEBOTS_CONTROLLER_LIB_PATH)" -lController -lCppController
 endif
 

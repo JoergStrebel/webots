@@ -85,7 +85,7 @@ C_FLAGS         = -c -Wall -fPIC -Wno-unused-but-set-variable -Wno-maybe-uniniti
 LD_FLAGS        = -shared
 LIBS            = -L$(WEBOTS_CONTROLLER_LIB_PATH) -lController -lCppController
 LIBOUT          = $(addprefix $(WEBOTS_CONTROLLER_LIB_PATH)/python$(PYTHON_SHORT_VERSION)/_,$(INTERFACE:.i=.so))
-PYTHON_INCLUDES = -I"/usr/include/python$(PYTHON_VERSION)"
+PYTHON_INCLUDES = -I"/usr/include/python$(PYTHON_VERSION)m"
 LIBCONTROLLER   = $(WEBOTS_CONTROLLER_LIB_PATH)/libController.so
 LIBCPPCONTROLLER= $(WEBOTS_CONTROLLER_LIB_PATH)/libCppController.so
 endif
